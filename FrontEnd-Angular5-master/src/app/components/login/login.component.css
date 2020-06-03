@@ -1,0 +1,11 @@
+#login{
+  background-image: url('../../../assets/loginbg.jpg');
+  background-size: cover;
+  /* opacity: 0.7; */
+  height: 90vh;
+  margin-top: 4rem;
+}
+
+nav a, nav .nav-item{
+  color: white;
+}

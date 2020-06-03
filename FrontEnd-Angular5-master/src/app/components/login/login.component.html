@@ -1,0 +1,66 @@
+<nav class="navbar fixed-top navbar-expand-sm navbar-light shadow">
+  <a class="navbar-brand" [routerLink]="['/']"><b><i>EasyMed</i></b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" [routerLink]="['/']">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" [routerLink]="['/signup']">Sign Up</a>
+          <a class="nav-item nav-link" [routerLink]="['/login']">Log in</a>
+      </div>
+  </div>
+</nav>
+
+
+
+<div id="login" class="container-fluid">
+<div class="container">
+    <div class="row ">
+    <div class="card col-sm-6 text-center ml-auto auth-form">
+      <div class="card-body">
+          <h3>Log In</h3>
+    <p *ngIf="loginErrorMessage" class="error alert alert-danger" role="alert">
+        <i class="fa fa-exclamation-circle"></i>
+          {{ loginErrorMessage }}
+        </p>
+<form (ngSubmit)="doLogin()">
+  
+  <label for="login-username-input"> Email </label>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text">
+        <span class="fa fa-user" aria-hidden="true"></span>
+      </div>
+    </div>
+    <input id="login-username-input" type="text" [(ngModel)]="loginInfo.email" name="loginUsername" class="form-control" placeholder="Email">
+  </div>
+
+  <label for="login-password-input"> Password </label>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text">
+        <span class="fa fa-lock" aria-hidden="true"></span>
+      </div>
+    </div>
+    <input id="login-password-input" type="password" [(ngModel)]="loginInfo.password" name="loginPassword" class="form-control" placeholder="Password">
+  </div>
+  <div>
+    <label for="login-password-role"> Role </label>
+    <select style="color:blue" name="role" [(ngModel)]="loginInfo.role">
+      <option style="color:rgb(19, 119, 158)" value="Admin">Admin</option>
+      <option style="color:rgb(19, 119, 158)" value="Lab Assistant">Lab Assistant</option>
+      <option style="color:rgb(19, 119, 158)" value="Patient">Patient</option>
+    </select>
+  </div>
+  <br/>
+  <button class="btn btn-success btn-block auth" type="submit">Log In</button>
+</form>
+<p>Forgot Password?<a><button (click)="forgotPassword()">Forgot Password</button> </a></p>
+<p>Don't have an account?<a [routerLink]="['/signup']"> Sign Up</a></p> 
+</div>
+</div>
+</div>
+</div>
+</div>

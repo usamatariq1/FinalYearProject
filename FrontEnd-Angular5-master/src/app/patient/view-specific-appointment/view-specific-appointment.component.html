@@ -1,0 +1,46 @@
+<div id="view-patients" class="container-fluid">
+  
+    <div class="container">
+    <div class="row">
+    <div class="card col-lg-8 ml-auto auth-form">
+      <div class="card-body">
+    
+    <h3 class="text-center">My Appointments</h3>
+    
+      <table class="table">
+          <thead>
+        <tr>
+          <th></th>
+          <th>Test Name</th>
+          <th>Date</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let appointment of myAppointments let i=index" class="active">
+        <td>{{i+1}}</td>
+        <td>{{appointment.test_name}}</td>
+        <td>{{date[i]}}</td>
+        <td>{{time[i]}}</td>
+        </tr>
+      </tbody>
+      </table>
+    <div>
+        <div class="row">
+            <div class="column small-12 large-2">
+                <label class="sbw_light">Select Test Name:</label><br />
+                <select [(ngModel)]="test_name">
+                    <option *ngFor="let test of tests let i=index" class="active" [value]="test.test_name">{{test.test_name}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="column">
+                <button class="btn btn-success btn-block auth" (click)=editAppointment()>Edit Appointment</button>
+                <button class="btn btn-success btn-block auth" (click)=deleteAppointment()>Delete Appointment</button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>

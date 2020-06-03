@@ -1,0 +1,42 @@
+<div id="view-patients" class="container-fluid">
+  
+    <div class="container">
+    <div class="row">
+    <div class="card col-lg-8 ml-auto auth-form">
+      <div class="card-body">
+    
+    <h3 class="text-center">Tests</h3>
+    
+      <table class="table">
+          <thead>
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Bill</th>
+          <th>Test Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let test of tests let i=index" class="active">
+        <td>{{i+1}}</td>
+        <td>{{test.test_name}}</td>
+        <td>{{test.test_description}}</td>
+        <td>{{test.bill}}</td>
+        <td>{{test.test_time}}</td>
+        </tr>
+      </tbody>
+      </table>
+      
+    <div class="row">
+      <div class="col-12 text-center">
+        <p>Cancel and go back?
+          <a [routerLink]="['/admin']">Back</a>
+        </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>

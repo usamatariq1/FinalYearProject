@@ -1,0 +1,49 @@
+<div id="sign-up" class="container-fluid">
+  
+  <div class="container">
+  <div class="row">
+  <div class="card col-lg-8 ml-auto auth-form">
+    <div class="card-body">
+  
+  <h3 class="text-center">Add Test</h3>
+  
+  <p *ngIf="errorMessage" class="error alert alert-danger" role="alert">
+    <i class="fa fa-exclamation-circle"></i>
+    {{ errorMessage }}
+  </p>
+  
+    <form name='frm'>
+    <div>
+      
+      <label for="test_name">Test Name</label>
+      <input type="text" name="test_name" [(ngModel)]="TestInfo.test_name" class="form-control" placeholder="Test Name">
+      
+      <label for="test_description">Test Description</label>
+      <textarea name="test_description" [(ngModel)]="TestInfo.test_description" rows="4" class="form-control" placeholder="Test Description"></textarea>
+      
+      <label for="bill">Bill</label>
+      <input type="text" name="bill" [(ngModel)]="TestInfo.bill" class="form-control" placeholder="Bill">
+      
+      <label for="test_time">Test Time</label>
+      <input type="text" name="test_time" [(ngModel)]="TestInfo.test_time" class="form-control" placeholder="Test Time">
+      
+      <label for="test_frequency">Test Frequency</label>
+      <input type="text" name="test_frequency" [(ngModel)]="TestInfo.test_frequency" class="form-control" placeholder="Test Frequency">
+      
+    </div>
+    
+  
+  <button class="btn btn-success btn-block auth" type="submit" (click)=AddTest()>Add Test</button>
+  </form>
+  <div class="row">
+    <div class="col-12 text-center">
+      <p>Cancel and go back?
+        <a [routerLink]="['/admin']">Back</a>
+      </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>

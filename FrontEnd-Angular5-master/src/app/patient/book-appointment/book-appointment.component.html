@@ -1,0 +1,53 @@
+ <div id="sign-up" class="container-fluid">
+  
+  <div class="container">
+  <div class="row">
+  <div class="card col-lg-8 ml-auto auth-form">
+    <div class="card-body">
+  
+  <h3 class="text-center">Book Appointment</h3>
+  
+  <p *ngIf="errorMessage" class="error alert alert-danger" role="alert">
+    <i class="fa fa-exclamation-circle"></i>
+    {{ errorMessage }}
+  </p>
+  
+  
+    <form name='frm'>
+      <div>
+        <div class="column small-12 large-2">
+          <label class="sbw_light">Select Test Name:</label><br />
+          <select name="test_name" [(ngModel)]="appointmentInfo.test_name" (onchange)=getSpecificTest() (onselect)=getSpecificTest() (click)=getSpecificTest()>
+            <option *ngFor="let test of tests let i=index" class="active" [value]="test.test_name">{{test.test_name}}</option>
+          </select>
+      </div>
+      
+      <label for="date">Date</label>
+      <div class="dateTimePicker">
+          <input name="date" type="date" id="start" format="dd-mm-yy" name="trip-start" [(ngModel)]="appointmentInfo.date" min="2018-01-01" max="2020-12-31" >
+      </div>
+      <br/>
+      <label for="time">Time</label>
+      <div class="sample-wrapper time-picker-wrapper">
+          <div>
+              <igx-time-picker [isSpinLoop]="false" name="time" [itemsDelta]="{hours:1, minutes:5}" [(ngModel)]="time" (onValueChanged)=selectTest()></igx-time-picker>
+          </div>
+      </div>
+        
+    </div>
+    
+  
+  <button class="btn btn-success btn-block auth" type="submit" (click)=bookAppointment()>Book Appointment</button>
+  </form>
+  <div class="row">
+    <div class="col-12 text-center">
+  <p>Already have account?
+    <a [routerLink]="['/login']">Log In</a>
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>

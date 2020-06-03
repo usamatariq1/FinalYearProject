@@ -1,0 +1,47 @@
+<div id="sign-up" class="container-fluid">
+  
+    <div class="container">
+    <div class="row">
+    <div class="card col-lg-8 ml-auto auth-form">
+      <div class="card-body">
+    
+    <h3 class="text-center">Edit Appointment</h3>
+    
+    <p *ngIf="errorMessage" class="error alert alert-danger" role="alert">
+      <i class="fa fa-exclamation-circle"></i>
+      {{ errorMessage }}
+    </p>
+    
+        <form name='frm'>
+
+        <div>
+            <label for="start">Date</label>
+        <div class="dateTimePicker">
+            <input type="date" name="date" id="start" format="dd-mm-yy" name="trip-start" [(ngModel)]="appointmentInfo.date" value="2018-07-22" min="2018-01-01" max="2020-12-31">
+        </div>
+        <br/>
+
+        <label for="start">Time</label>
+        <div class="sample-wrapper time-picker-wrapper">
+            <div>
+                <igx-time-picker [isSpinLoop]="false" name="date" [itemsDelta]="{hours:1, minutes:5}" [(ngModel)]="time"></igx-time-picker>
+            </div>
+        </div>
+            
+          </div>
+          
+        
+        <button class="btn btn-success btn-block auth" type="submit" (click)=editAppointment()>Edit Appointment</button>
+        </form>
+    <div class="row">
+      <div class="col-12 text-center">
+        <p>Cancel and go back?
+          <a [routerLink]="['/patient']">Back</a>
+        </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>

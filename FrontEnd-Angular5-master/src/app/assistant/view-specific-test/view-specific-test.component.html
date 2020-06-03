@@ -1,0 +1,63 @@
+<div id="sign-up" class="container-fluid">
+  
+    <div class="container">
+    <div class="row">
+    <div class="card col-lg-8 ml-auto auth-form">
+      <div class="card-body">
+    
+    <h3 class="text-center">View Specific Test</h3>
+  
+    <div class="column small-12 large-2">
+      <label class="sbw_light">Select Test Name:</label><br />
+      <select [(ngModel)]="test_name" (change)="getSpecificTest()">
+         <option *ngFor="let test of tests let i=index" class="active" [value]="test.test_name">{{test.test_name}}</option>
+      </select>
+  </div>
+    
+    <p *ngIf="errorMessage" class="error alert alert-danger" role="alert">
+      <i class="fa fa-exclamation-circle"></i>
+      {{ errorMessage }}
+    </p>
+    
+        <br/>
+      <h5 class="text-center">Test Detail</h5>
+        
+  
+      <form name='frm'>
+      <div>
+        
+          <label for="TestInfo[0]._id">Test ID</label>
+          <input type="text" name="_id" [(ngModel)]="TestInfo[0]._id" class="form-control" readonly>
+        
+          <label for="TestInfo[0].test_name">Test Name</label>
+          <input type="text" name="test_name" [(ngModel)]="TestInfo[0].test_name" class="form-control" readonly>
+        
+          <label for="TestInfo.[0]test_description">Test Description</label>
+          <textarea name="test_description" [(ngModel)]="TestInfo[0].test_description" class="form-control" readonly></textarea>
+        
+          <label for="TestInfo[0].bill">Test Bill</label>
+          <input type="text" name="bill" [(ngModel)]="TestInfo[0].bill" rows="4" class="form-control" readonly>
+          
+          <label for="TestInfo[0].test_time">Test Time</label>
+          <input type="text" name="test_time" [(ngModel)]="TestInfo[0].test_time" class="form-control" readonly>
+        
+          <label for="TestInfo[0].test_frequency">Test Frequency</label>
+          <input type="text" name="test_frequency" [(ngModel)]="TestInfo[0].test_frequency" class="form-control" readonly>
+        
+      </div>
+      
+    
+    <!-- <button class="btn btn-success btn-block auth" type="submit" (click)=PatientSignUp()>Sign Up</button>
+     --></form>
+    <div class="row">
+      <div class="col-12 text-center">
+          <p>Delete
+              <button class="btn btn-success btn-block auth" (click)=deleteTest()>Delete</button>
+            </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>

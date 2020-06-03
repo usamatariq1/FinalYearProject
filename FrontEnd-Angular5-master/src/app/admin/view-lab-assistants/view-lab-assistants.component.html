@@ -1,0 +1,40 @@
+<div id="view-patients" class="container-fluid">
+  
+  <div class="container">
+  <div class="row">
+  <div class="card col-lg-8 ml-auto auth-form">
+    <div class="card-body">
+  
+  <h3 class="text-center">Lab Assistants</h3>
+  
+    <table class="table">
+        <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let labAssistant of labAssistants let i=index" class="active">
+      <td>{{i+1}}</td>
+      <td>{{labAssistant.name.firstName}} {{labAssistant.name.lastName}}</td>
+      <td>{{labAssistant.email}}</td>
+      <td>{{labAssistant.mobile_number}}</td>
+      </tr>
+    </tbody>
+    </table>
+    
+  <div class="row">
+    <div class="col-12 text-center">
+      <p>Cancel and go back?
+        <a [routerLink]="['/admin']">Back</a>
+      </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>

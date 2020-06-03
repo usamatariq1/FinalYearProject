@@ -1,0 +1,62 @@
+<div id="sign-up" class="container-fluid">
+  
+  <div class="container">
+  <div class="row">
+  <div class="card col-lg-8 ml-auto auth-form">
+    <div class="card-body">
+  
+  <h3 class="text-center">View Specific Patient</h3>
+  
+  <p *ngIf="errorMessage" class="error alert alert-danger" role="alert">
+    <i class="fa fa-exclamation-circle"></i>
+    {{ errorMessage }}
+  </p>
+  
+
+    <form name='frm'>
+    <div>
+      
+      <label for="patientInfo.name.firstName">First Name</label>
+      <input type="text" name="firstName" [(ngModel)]="patientInfo.name.firstName" class="form-control" readonly>
+      
+      <label for="patientInfo.name.lastName">Last Name</label>
+      <input type="text" name="lastName" [(ngModel)]="patientInfo.name.lastName" class="form-control" readonly>
+      
+      <label for="patientInfo.email">Email</label>
+      <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <span class="fa fa-user" aria-hidden="true"></span>
+            </div>
+          </div>
+      <input type="text" name="patientInfo.email" [(ngModel)]="patientInfo.email" class="form-control" readonly>
+      </div>
+    
+      <label for="patientInfo.mobile_number">Mobile No</label>
+      <input type="text" name="patientInfo.mobile_number" [(ngModel)]="patientInfo.mobile_number" class="form-control" readonly>
+      
+      <label for="patientInfo.address">Address</label>
+      <input type="text" name="patientInfo.address" [(ngModel)]="patientInfo.address" class="form-control" readonly>
+      
+      <label for="patientInfo.age">Age</label>
+      <input type="text" name="patientInfo.age" [(ngModel)]="patientInfo.age" class="form-control" readonly>
+      
+      <label for="patientInfo.gender">Gender</label>
+      <input type="text" name="patientInfo.gender" [(ngModel)]="patientInfo.gender" class="form-control" readonly>
+      
+      
+    </div>
+    
+  </form>
+  <div class="row">
+    <div class="col-12 text-center">
+      <p>Cancel and go back?
+        <a [routerLink]="['/patient']">Back</a>
+      </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>

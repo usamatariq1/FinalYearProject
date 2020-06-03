@@ -1,0 +1,105 @@
+#home-container {
+  margin-top: 5rem;
+
+}
+
+nav a, nav .nav-item, .navbar-brand:hover{
+  color: white;
+}
+
+/* Carousel Background */
+#introCarousel{
+  /* background-image: url('https://picsum.photos/200/300/?blur'); */
+  background-image: url('../../../assets/carouselbg.jpg');
+  /* ?blur for blurred */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  color: white;
+}
+
+/* Carousel Indicators */
+.carousel-indicators > li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+}
+
+/* Carousel Icon Buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color:black;
+}
+
+#info-container{
+  margin-top: 2vh; 
+}
+
+.info-description{
+  font-size: .9rem;
+}
+
+.info-blocks{
+  margin-bottom: 30vh;
+}
+
+.block{
+  background-color: steelblue;
+  color: white;
+  text-align: center;
+  height: 15vh; 
+  border: solid 1px white;
+}
+
+
+.block-text-hidden{
+  color: white;
+  /* display: none; */
+  visibility: hidden;
+}
+
+.block:hover{
+  background-color: whitesmoke;
+  height: 25vh;
+  transition: all 2s ease;
+  color: black;
+}
+
+.block:hover .block-text-hidden{
+  color: black;
+  /* display: block; */
+  visibility: visible;
+  transition: all 2s ease;
+}
+
+footer{
+  background-color: rgb(236, 234, 234);
+}
+
+.feature-box{
+  transition: background-color 1s;
+}
+
+.feature-box-bottom{
+  background-color: steelblue;
+  color: black;
+  height: 5%;
+  transition: height 3s;
+}
+
+.feature-box:hover{
+  /* background-color: steelblue; */
+  height: 100%;
+  /* animation-name: fadeIn;
+  animation-duration: 3s; */
+}
+
+/* @keyframes fadeIn{
+  from{
+    .
+  }
+
+  to{
+
+  }
+} */

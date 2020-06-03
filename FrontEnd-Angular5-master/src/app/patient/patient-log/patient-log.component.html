@@ -1,0 +1,39 @@
+<div id="view-patients" class="container-fluid">
+  
+  <div class="container">
+  <div class="row">
+  <div class="card col-lg-8 ml-auto auth-form">
+    <div class="card-body">
+  
+  <h3 class="text-center">Patient Log</h3>
+
+<form name='frm'>
+  <div>
+
+    <table class="table">
+        <thead>
+      <tr>
+        <th></th>
+        <th>Test Name</th>
+        <th>Date</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let log of patientLog let i=index" class="active">
+      <td>{{i+1}}</td>
+      <td>{{appointment.test_name}}</td>
+      <td>{{date[i]}}</td>
+      <td>{{time[i]}}</td>
+      </tr>
+    </tbody>
+    </table>
+
+    </div>
+</form>
+  
+</div>
+</div>
+</div>
+</div>
+</div>

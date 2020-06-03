@@ -1,0 +1,148 @@
+<nav class="navbar fixed-top navbar-expand-sm navbar-light shadow">
+    <a class="navbar-brand" [routerLink]="['/']"><b><i>EasyMed</i></b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" [routerLink]="['/']">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" [routerLink]="['/signup']">Sign Up</a>
+            <a class="nav-item nav-link" [routerLink]="['/login']">Login</a>
+        </div>
+    </div>
+  </nav>
+  
+  <div id="sign-up" class="container-fluid">
+  
+  <div class="container">
+  <div class="row">
+  <div class="card col-lg-8 ml-auto auth-form">
+    <div class="card-body">
+  
+  <h3 class="text-center">Sign Up</h3>
+  
+  <p *ngIf="errorMessage" class="error alert alert-danger" role="alert">
+    <i class="fa fa-exclamation-circle"></i>
+    {{ errorMessage }}
+  </p>
+  
+  
+  <!-- <form (ngSubmit)="doSignUp()">
+  <h5>Select User Type</h5>
+  <select [(ngModel)]="signUpInfo.role" name="role-menu">
+    <option value="Doctor">Doctor</option>
+    <option value="Patient">Patient</option>
+  </select>
+  
+  <div *ngIf="signUpInfo.role==='Doctor'">
+    <label for="usernameValue">Username</label>
+    <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <span class="fa fa-user" aria-hidden="true"></span>
+          </div>
+        </div>
+    <input type="text" name="usernameValue" [(ngModel)]="signUpInfo.username" class="form-control" placeholder="Username">
+        </div>
+  
+    <label for="passwordValue">Password</label>
+    <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <span class="fa fa-lock" aria-hidden="true"></span>
+          </div>
+        </div>
+    <input type="password" name="passwordValue" [(ngModel)]="signUpInfo.password" class="form-control" placeholder="Password">
+        </div>
+    
+        <div class="row">
+          <div class="col-lg-6">
+    <label for="firstNameValue">First Name</label>
+    <input type="text" name="firstNameValue" [(ngModel)]="signUpInfo.firstName" class="form-control" placeholder="First Name">
+          </div>
+          <div class="col-lg-6">
+    <label for="lastNameValue">Last Name</label>
+    <input type="text" name="lastNameValue" [(ngModel)]="signUpInfo.lastName" class="form-control" placeholder="Last Name">
+          </div>
+      </div>
+    <label for="addressValue">Address</label>
+    <input type="text" name="addressValue" [(ngModel)]="signUpInfo.address" class="form-control" placeholder="Address">
+    
+    <div class="row">
+      <div class="col-lg-5">
+    <label for="cityValue">City</label>
+    <input type="text" name="cityValue" [(ngModel)]="signUpInfo.city" class="form-control" placeholder="City">
+      </div>
+      <div class="col-lg-3">
+    <label for="stateValue">State</label>
+    <input type="text" name="stateValue" [(ngModel)]="signUpInfo.state" class="form-control" placeholder="State">
+      </div>
+      <div class="col-lg-4">
+    <label for="zipValue">Zip</label>
+    <input type="number" name="zipValue" [(ngModel)]="signUpInfo.zip" class="form-control" placeholder="Zip">
+    </div>
+  </div>
+  </div>
+  
+  <div *ngIf="signUpInfo.role==='Patient'"> -->
+    <form name='frm'>
+    <div>
+      
+      <label for="firstName">First Name</label>
+      <input type="text" name="firstName" ng-model="signUpInfo.firstName" class="form-control" placeholder="First Name">
+      
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" ng-model="signUpInfo.lastName" class="form-control" placeholder="Last Name">
+      
+      <label for="email">Email</label>
+      <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <span class="fa fa-user" aria-hidden="true"></span>
+            </div>
+          </div>
+      <input type="text" name="email" ng-model="signUpInfo.email" class="form-control" placeholder="Email">
+      </div>
+      <label for="password">Password</label>
+      <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <span class="fa fa-lock" aria-hidden="true"></span>
+            </div>
+          </div>
+      <input type="password" name="password" ng-model="signUpInfo.password" class="form-control" placeholder="Password">
+          </div>
+    
+      <label for="mobile">Mobile No</label>
+      <input type="text" name="mobile" ng-model="signUpInfo.mobile" class="form-control" placeholder="Mobile Number">
+      
+      <label for="address">Address</label>
+      <input type="text" name="address" ng-model="signUpInfo.address" class="form-control" placeholder="Address">
+      
+      <label for="age">Age</label>
+      <input type="text" name="age" ng-model="signUpInfo.age" class="form-control" placeholder="Age">
+      
+      <h5>Select Gender</h5>
+      <select ng-model="signUpInfo.gender" name="role-menu">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      
+    </div>
+    
+  
+  <button class="btn btn-success btn-block auth" type="submit" (click)=PatientSignUp()>Sign Up</button>
+  </form>
+  <div class="row">
+    <div class="col-12 text-center">
+  <p>Already have account?
+    <a [routerLink]="['/login']">Log In</a>
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>

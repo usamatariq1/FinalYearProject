@@ -1,0 +1,9 @@
+.error{
+  font-style: italic;
+  color: red;
+  font-weight: bold;
+}
+
+nav a, nav .nav-item{
+  color: white;
+}

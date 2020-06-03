@@ -1,0 +1,88 @@
+<nav class="navbar fixed-top navbar-expand-sm navbar-light shadow">
+    <a class="navbar-brand" [routerLink]="['/']"><b><i>EasyMed</i></b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" [routerLink]="['/']">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" [routerLink]="['/signup']">Sign Up</a>
+        <a class="nav-item nav-link" (click)="logOut()">Log Out</a>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="wrapper" class="active" >
+        
+    <!-- Sidebar -->
+          <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+    <ul id="sidebar_menu" class="sidebar-nav">
+      <li></li>     
+    </ul>
+      <ul class="sidebar-nav" id="sidebar">    
+         
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Test
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a [routerLink]="['./viewSpecificTest']">View Specific Test</a></li>
+            <li><a [routerLink]="['./viewTests']">View Tests</a></li>
+          </ul>
+        </div>
+  
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Profile
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a [routerLink]="['./myProfile']">My Profile</a></li>
+            <li><a [routerLink]="['./changePassword']">Change Password</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Appointment
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a [routerLink]="['./viewSpecificAppointment']">View Specific Appointment</a></li>
+            <li><a [routerLink]="['./viewAppointments']">View Appointments</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Test
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a [routerLink]="['./viewSpecificTest']">View Specific test</a></li>
+            <li><a [routerLink]="['./viewTests']">View all tests</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Patient
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a [routerLink]="['./viewSpecificPatient']">View Specific Patient</a></li>
+            <li><a [routerLink]="['./viewPatients']">View Patients</a></li>
+          </ul>
+        </div>
+
+      </ul>
+    </div>
+        
+    <!-- Page content -->
+    <div id="page-content-wrapper">
+      <!-- Keep all page content within the page-content inset div! -->
+      <div class="page-content inset">
+        <div class="row">
+            <div class="col-md-12">
+              <router-outlet> </router-outlet>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  

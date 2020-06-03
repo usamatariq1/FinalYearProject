@@ -1,0 +1,15 @@
+#sign-up{
+    background-image: url('../../../assets/carouselbg.jpg');
+    background-size: cover;
+    /* opacity: 0.7; */
+    height: 100%;
+    margin-top: 4rem;
+  }
+  
+  label{
+    font-size: .9rem;
+  }
+  
+  nav a, nav .nav-item{
+    color: white;
+  }

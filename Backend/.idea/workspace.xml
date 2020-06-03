@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b2e38e9d-43b1-490a-b8d5-8768bd147c2c" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UKMiJWUZNRYEpiCkhiot2kWMpJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="13.2.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\7th semester\endoscopy\endoscopy\server" />
+      <recent name="E:\7th semester\endoscopy\endoscopy\server\controller" />
+      <recent name="E:\7th semester\endoscopy\endoscopy\server\model" />
+      <recent name="F:\University\7B\Web\endoscopy\server" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\7th semester\endoscopy\endoscopy\server\model" />
+      <recent name="E:\7th semester\endoscopy\endoscopy\server" />
+      <recent name="F:\University\7B\Web\endoscopy\server\controller" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2e38e9d-43b1-490a-b8d5-8768bd147c2c" name="Default" comment="" />
+      <created>1574888078685</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574888078685</updated>
+      <workItem from="1574888116919" duration="10925000" />
+      <workItem from="1574954066929" duration="2679000" />
+      <workItem from="1575100964180" duration="1140000" />
+      <workItem from="1575108109080" duration="7974000" />
+      <workItem from="1575116836554" duration="14347000" />
+      <workItem from="1575142426050" duration="31548000" />
+      <workItem from="1575279599316" duration="36561000" />
+      <workItem from="1575409134661" duration="4826000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1575360375476">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1575360375476" />
+    <state width="1323" height="174" key="GridCell.Tab.0.bottom" timestamp="1575413920170">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575413920170" />
+    <state width="1323" height="174" key="GridCell.Tab.0.center" timestamp="1575413920169">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1575413920169" />
+    <state width="1323" height="174" key="GridCell.Tab.0.left" timestamp="1575413920168">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1575413920168" />
+    <state width="1323" height="174" key="GridCell.Tab.0.right" timestamp="1575413920169">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575413920169" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1575279598399">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1575279598399" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1575120683870">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1575120683870" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/controller/LabAssistant.js</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
